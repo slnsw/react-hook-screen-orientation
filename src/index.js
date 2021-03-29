@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
+import o9n from 'o9n';
 
-const getOrientation = () =>
-  window.screen.orientation.type
+const getOrientation = () => o9n.orientation.type;
 
 const useScreenOrientation = () => {
   const [orientation, setOrientation] =
